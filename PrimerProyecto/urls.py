@@ -18,10 +18,12 @@ from django.contrib import admin
 from django.urls import path
 from PrimeraApp import views 
 from SegundaApp import views as segunda
+from Ejercicio1 import views as tercera
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("ahora/", views.display),
     path("fechayhora/", views.displayDateTime),
-    path("segundaApp/", segunda.Hola2)
+    path("segundaApp/", segunda.Hola2),
+    path("Ejercicio/", tercera.mostrar_variable1)
 ]  
